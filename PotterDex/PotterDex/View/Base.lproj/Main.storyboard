@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qV8-v9-Y6m">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HARRYP__.TTF">
+            <string>HarryP</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--PotterDex-->
+        <scene sceneID="hlY-qP-TcG">
+            <objects>
+                <tableViewController id="kfz-Qt-d84" customClass="CharacterListTableViewController" customModule="PotterDex" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fn9-wx-cKB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="sectionIndexColor" red="1" green="0.93038075090000005" blue="0.61136488190000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="sectionIndexBackgroundColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="characterCell" textLabel="WYO-8z-tUJ" rowHeight="114" style="IBUITableViewCellStyleDefault" id="N5v-GZ-Itp">
+                                <rect key="frame" x="0.0" y="28" width="414" height="114"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottom" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N5v-GZ-Itp" id="xHK-WJ-waJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="113.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="bottom" insetsLayoutMarginsFromSafeArea="NO" text="(Characters)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="WYO-8z-tUJ">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="113.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="43"/>
+                                            <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="oeJ-qW-0u0" kind="show" id="ong-dL-hWc"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kfz-Qt-d84" id="607-0u-LYu"/>
+                            <outlet property="delegate" destination="kfz-Qt-d84" id="KCa-sv-1Tn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="PotterDex" id="Q7y-Ha-Rvd"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rT4-Uh-2Pk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="269.56521739130437" y="397.76785714285711"/>
+        </scene>
+        <!--Character Detail View Controller-->
+        <scene sceneID="JdS-lb-twW">
+            <objects>
+                <viewController id="oeJ-qW-0u0" customClass="CharacterDetailViewController" customModule="PotterDex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="unn-9A-xRF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="view controller" translatesAutoresizingMaskIntoConstraints="NO" id="aU8-6n-ohc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="FRz-Yo-a7f" appends="YES" id="uVg-Ud-6Pt"/>
+                                </connections>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Gov-Ra-om0">
+                                <rect key="frame" x="20" y="404" width="244" height="342"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="yH8-Fy-PlU">
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="342"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDb-xY-Xd1">
+                                                <rect key="frame" x="0.0" y="0.0" width="92" height="34"/>
+                                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="29"/>
+                                                <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wand:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqT-5s-54I">
+                                                <rect key="frame" x="0.0" y="77" width="83" height="34"/>
+                                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="29"/>
+                                                <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YC6-jc-HN8" userLabel="Blood Status">
+                                                <rect key="frame" x="0.0" y="154" width="122" height="34"/>
+                                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="29"/>
+                                                <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Patronus:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BK0-FO-MIP" userLabel="Dumbledores Army">
+                                                <rect key="frame" x="0.0" y="231" width="122" height="34"/>
+                                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="29"/>
+                                                <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="highlightedColor" red="0.086715914310000003" green="0.10173852" blue="0.11764962230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Species:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxE-m0-vTq" userLabel="DeathEater">
+                                                <rect key="frame" x="0.0" y="308" width="112" height="34"/>
+                                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="29"/>
+                                                <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.086715914309024811" green="0.10173851996660233" blue="0.1176496222615242" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="MWY-dj-8MG">
+                                        <rect key="frame" x="122" y="0.0" width="122" height="342"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="(house)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ET6-Ms-swp">
+                                                <rect key="frame" x="0.0" y="0.0" width="122" height="34"/>
+                                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="27"/>
+                                                <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="(wand)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sH9-24-N4Y">
+                                                <rect key="frame" x="0.0" y="77" width="122" height="34"/>
+                                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="27"/>
+                                                <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(blood status)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGR-9T-eho" userLabel="Blood Status">
+                                                <rect key="frame" x="0.0" y="154" width="122" height="34"/>
+                                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="27"/>
+                                                <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(patronus)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpI-14-6cC" userLabel="Dumbledores Army">
+                                                <rect key="frame" x="0.0" y="231" width="122" height="34"/>
+                                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="27"/>
+                                                <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="highlightedColor" red="0.086715914310000003" green="0.10173852" blue="0.11764962230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(species)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reX-QN-RSM" userLabel="DeathEater">
+                                                <rect key="frame" x="0.0" y="308" width="122" height="34"/>
+                                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="27"/>
+                                                <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Name)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehr-NR-l9z">
+                                <rect key="frame" x="20" y="97" width="374" height="147"/>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="55"/>
+                                <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JqZ-Jt-jej" firstAttribute="bottom" secondItem="ehr-NR-l9z" secondAttribute="bottom" constant="618" id="1i4-Pe-LTJ"/>
+                            <constraint firstItem="JqZ-Jt-jej" firstAttribute="trailing" secondItem="aU8-6n-ohc" secondAttribute="trailing" id="DEh-3O-3pL"/>
+                            <constraint firstItem="ehr-NR-l9z" firstAttribute="top" secondItem="JqZ-Jt-jej" secondAttribute="top" constant="53" id="GZE-vi-Jpq"/>
+                            <constraint firstItem="ehr-NR-l9z" firstAttribute="leading" secondItem="JqZ-Jt-jej" secondAttribute="leading" constant="20" id="NRJ-lP-Vob"/>
+                            <constraint firstItem="JqZ-Jt-jej" firstAttribute="bottom" secondItem="Gov-Ra-om0" secondAttribute="bottom" constant="116" id="Ndk-hr-ltV"/>
+                            <constraint firstItem="aU8-6n-ohc" firstAttribute="top" secondItem="JqZ-Jt-jej" secondAttribute="top" id="Nel-rd-Y9W"/>
+                            <constraint firstItem="JqZ-Jt-jej" firstAttribute="bottom" secondItem="aU8-6n-ohc" secondAttribute="bottom" id="eNU-Ox-Cqd"/>
+                            <constraint firstItem="Gov-Ra-om0" firstAttribute="leading" secondItem="JqZ-Jt-jej" secondAttribute="leading" constant="20" id="lKp-vp-sIM"/>
+                            <constraint firstItem="JqZ-Jt-jej" firstAttribute="trailing" secondItem="Gov-Ra-om0" secondAttribute="trailing" constant="150" id="nDK-2D-wqw"/>
+                            <constraint firstItem="JqZ-Jt-jej" firstAttribute="trailing" secondItem="ehr-NR-l9z" secondAttribute="trailing" constant="20" id="uqP-Uv-p9g"/>
+                            <constraint firstItem="aU8-6n-ohc" firstAttribute="leading" secondItem="JqZ-Jt-jej" secondAttribute="leading" id="yWw-mt-BKB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JqZ-Jt-jej"/>
+                    </view>
+                    <connections>
+                        <outlet property="bloodStatusLabel" destination="cGR-9T-eho" id="ZPd-fS-d8Y"/>
+                        <outlet property="houseLabel" destination="ET6-Ms-swp" id="1nJ-o0-3OO"/>
+                        <outlet property="nameLabel" destination="ehr-NR-l9z" id="Vi4-nQ-b7m"/>
+                        <outlet property="patronusLabel" destination="kpI-14-6cC" id="Rfs-Mk-dIS"/>
+                        <outlet property="speciesLabel" destination="reX-QN-RSM" id="KJi-JV-Qiy"/>
+                        <outlet property="wandLabel" destination="sH9-24-N4Y" id="p1H-un-XqD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zgp-g5-M6r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="FRz-Yo-a7f">
+                    <connections>
+                        <action selector="swipeToReturn:" destination="oeJ-qW-0u0" id="B59-dH-SIF"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1369.5652173913045" y="397.76785714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5lY-ih-pUt">
+            <objects>
+                <navigationController modalTransitionStyle="crossDissolve" navigationBarHidden="YES" id="qV8-v9-Y6m" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="Dmi-8J-xfv">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nxg-Gf-t5D">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="kfz-Qt-d84" kind="relationship" relationship="rootViewController" id="sjl-gI-yHv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDL-NU-F3F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-649" y="398"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="view controller" width="362" height="725"/>
+    </resources>
+</document>
