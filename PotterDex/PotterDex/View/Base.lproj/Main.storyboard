@@ -70,44 +70,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="view controller" translatesAutoresizingMaskIntoConstraints="NO" id="aU8-6n-ohc">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774.00000000000011"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="FRz-Yo-a7f" appends="YES" id="uVg-Ud-6Pt"/>
                                 </connections>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Gov-Ra-om0">
-                                <rect key="frame" x="20" y="316" width="244" height="342"/>
+                                <rect key="frame" x="20" y="338.5" width="244" height="319.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="yH8-Fy-PlU">
-                                        <rect key="frame" x="0.0" y="0.0" width="122" height="342"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="319.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDb-xY-Xd1">
-                                                <rect key="frame" x="0.0" y="0.0" width="92" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="54.5" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="29"/>
                                                 <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wand:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqT-5s-54I">
-                                                <rect key="frame" x="0.0" y="77" width="83" height="34"/>
+                                                <rect key="frame" x="0.0" y="72.5" width="53.5" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="29"/>
                                                 <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YC6-jc-HN8" userLabel="Blood Status">
-                                                <rect key="frame" x="0.0" y="154" width="122" height="34"/>
+                                                <rect key="frame" x="0.0" y="145" width="109" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="29"/>
                                                 <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Patronus:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BK0-FO-MIP" userLabel="Dumbledores Army">
-                                                <rect key="frame" x="0.0" y="231" width="122" height="34"/>
+                                                <rect key="frame" x="0.0" y="217.5" width="73" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="29"/>
                                                 <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="highlightedColor" red="0.086715914310000003" green="0.10173852" blue="0.11764962230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Species:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxE-m0-vTq" userLabel="DeathEater">
-                                                <rect key="frame" x="0.0" y="308" width="112" height="34"/>
+                                                <rect key="frame" x="0.0" y="290" width="67" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="29"/>
                                                 <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -116,34 +116,34 @@
                                         <color key="backgroundColor" red="0.086715914309024811" green="0.10173851996660233" blue="0.1176496222615242" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="MWY-dj-8MG">
-                                        <rect key="frame" x="122" y="0.0" width="122" height="342"/>
+                                        <rect key="frame" x="122" y="0.0" width="122" height="319.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="(house)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ET6-Ms-swp">
-                                                <rect key="frame" x="0.0" y="0.0" width="122" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="122" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="27"/>
                                                 <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="(wand)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sH9-24-N4Y">
-                                                <rect key="frame" x="0.0" y="77" width="122" height="34"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="(wand)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sH9-24-N4Y">
+                                                <rect key="frame" x="0.0" y="72.5" width="122" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="27"/>
                                                 <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(blood status)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGR-9T-eho" userLabel="Blood Status">
-                                                <rect key="frame" x="0.0" y="154" width="122" height="34"/>
+                                                <rect key="frame" x="0.0" y="145" width="122" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="27"/>
                                                 <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(patronus)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpI-14-6cC" userLabel="Dumbledores Army">
-                                                <rect key="frame" x="0.0" y="231" width="122" height="34"/>
+                                                <rect key="frame" x="0.0" y="217.5" width="122" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="27"/>
                                                 <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="highlightedColor" red="0.086715914310000003" green="0.10173852" blue="0.11764962230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(species)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reX-QN-RSM" userLabel="DeathEater">
-                                                <rect key="frame" x="0.0" y="308" width="122" height="34"/>
+                                                <rect key="frame" x="0.0" y="290" width="122" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="27"/>
                                                 <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -153,7 +153,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Name)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehr-NR-l9z">
-                                <rect key="frame" x="20" y="53" width="374" height="103"/>
+                                <rect key="frame" x="20" y="0.0" width="374" height="103"/>
                                 <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="55"/>
                                 <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -161,9 +161,9 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="JqZ-Jt-jej" firstAttribute="bottom" secondItem="ehr-NR-l9z" secondAttribute="bottom" constant="618" id="1i4-Pe-LTJ"/>
+                            <constraint firstItem="JqZ-Jt-jej" firstAttribute="bottom" secondItem="ehr-NR-l9z" secondAttribute="bottom" constant="671" id="1i4-Pe-LTJ"/>
                             <constraint firstItem="JqZ-Jt-jej" firstAttribute="trailing" secondItem="aU8-6n-ohc" secondAttribute="trailing" id="DEh-3O-3pL"/>
-                            <constraint firstItem="ehr-NR-l9z" firstAttribute="top" secondItem="JqZ-Jt-jej" secondAttribute="top" constant="53" id="GZE-vi-Jpq"/>
+                            <constraint firstItem="ehr-NR-l9z" firstAttribute="top" secondItem="JqZ-Jt-jej" secondAttribute="top" id="GZE-vi-Jpq"/>
                             <constraint firstItem="ehr-NR-l9z" firstAttribute="leading" secondItem="JqZ-Jt-jej" secondAttribute="leading" constant="20" id="NRJ-lP-Vob"/>
                             <constraint firstItem="JqZ-Jt-jej" firstAttribute="bottom" secondItem="Gov-Ra-om0" secondAttribute="bottom" constant="116" id="Ndk-hr-ltV"/>
                             <constraint firstItem="aU8-6n-ohc" firstAttribute="top" secondItem="JqZ-Jt-jej" secondAttribute="top" id="Nel-rd-Y9W"/>
