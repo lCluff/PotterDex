@@ -10,7 +10,7 @@ import UIKit
 
 class CharacterDetailViewController: UIViewController, UINavigationControllerDelegate {
     
-    var characters: [Character] = []
+//    var characters: [Character] = []
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var houseLabel: UILabel!
@@ -21,20 +21,12 @@ class CharacterDetailViewController: UIViewController, UINavigationControllerDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.interactivePopGestureRecognizer!.delegate = self as? UIGestureRecognizerDelegate
+       self.updateViews()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
-        guard let importCharacter = character?.name, let importBloodStatus = character?.bloodStatus else {return}
-        nameLabel.text = importCharacter
-        bloodStatusLabel.text = importBloodStatus
-        super.viewWillAppear(animated)
-    }
-    
     var character: Character? {
         didSet {
-            if isViewLoaded{updateViews()}
+            loadViewIfNeeded()
+            updateViews()
         }
     }
     
@@ -48,13 +40,13 @@ class CharacterDetailViewController: UIViewController, UINavigationControllerDel
         speciesLabel.text = characters.species
         
     }
-    @IBAction func swipeToReturn(_ sender: UIGestureRecognizer) {
-        guard UIGestureRecognizer == interactivePopGestureRecognizer else {
-            return true // default value
-        }
-        
-        return viewControllers.count > 1 && duringPushAnimation == false
-    }
+//    @IBAction func swipeToReturn(_ sender: UIGestureRecognizer) {
+//        guard UIGestureRecognizer == interactivePopGestureRecognizer else {
+//            return true // default value
+//        }
+//        
+//        return viewControllers.count > 1 && duringPushAnimation == false
+//    }
 }
 
 

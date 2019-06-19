@@ -20,7 +20,7 @@
             <objects>
                 <tableViewController id="kfz-Qt-d84" customClass="CharacterListTableViewController" customModule="PotterDex" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fn9-wx-cKB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="separatorColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -46,7 +46,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <segue destination="oeJ-qW-0u0" kind="show" id="ong-dL-hWc"/>
+                                    <segue destination="oeJ-qW-0u0" kind="show" identifier="toCharacterDetailVC" id="I54-R5-xpm"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -66,18 +66,18 @@
             <objects>
                 <viewController id="oeJ-qW-0u0" customClass="CharacterDetailViewController" customModule="PotterDex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="unn-9A-xRF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="view controller" translatesAutoresizingMaskIntoConstraints="NO" id="aU8-6n-ohc">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="FRz-Yo-a7f" appends="YES" id="uVg-Ud-6Pt"/>
                                 </connections>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Gov-Ra-om0">
-                                <rect key="frame" x="20" y="404" width="244" height="342"/>
+                                <rect key="frame" x="20" y="316" width="244" height="342"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="yH8-Fy-PlU">
                                         <rect key="frame" x="0.0" y="0.0" width="122" height="342"/>
@@ -153,7 +153,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Name)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehr-NR-l9z">
-                                <rect key="frame" x="20" y="97" width="374" height="147"/>
+                                <rect key="frame" x="20" y="53" width="374" height="103"/>
                                 <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="55"/>
                                 <color key="textColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -196,10 +196,11 @@
         <!--Navigation Controller-->
         <scene sceneID="5lY-ih-pUt">
             <objects>
-                <navigationController modalTransitionStyle="crossDissolve" navigationBarHidden="YES" id="qV8-v9-Y6m" sceneMemberID="viewController">
+                <navigationController modalTransitionStyle="crossDissolve" id="qV8-v9-Y6m" sceneMemberID="viewController">
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="Dmi-8J-xfv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.967725575" green="0.80805343389999995" blue="0.27431631090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

@@ -39,10 +39,10 @@ class CharacterListTableViewController: UITableViewController {
     
     //  MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toCharacterVController", let indexPath = tableView.indexPathForSelectedRow {
+        if segue.identifier == "toCharacterDetailVC", let indexPath = tableView.indexPathForSelectedRow {
             var destinationVC = segue.destination as? CharacterDetailViewController
             let character = CharacterController.sharedInstance.characters[indexPath.row]
-            destinationVC?.characters
+            destinationVC?.character = character
         }
     }
 }
